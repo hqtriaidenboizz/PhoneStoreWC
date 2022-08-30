@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Styles/Css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="wrapper home">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="nav-mobile" onclick="OpentNavMobile()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <img src="/Assets/Images/logo.png" alt="" class="logo">
+                    <div class="header__menu">
+                        <ul class="menu header-main__menu" id="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Brands</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Dealer</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Customer Services</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul class="menu__right">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">My Cart
+                                    <span>3</span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item__language">
+                                <img class="menu-item__img" src="./Assets/Images/anh.png" alt="">
+                                <button class="menu-item__icon" id="menu-item__icon"><i
+                                        class="ri-arrow-drop-down-line"></i></button>
+                                <div class="item__language" id="item__language">
+                                    <ul>
+                                        <li>EN</li>
+                                        <li>VN</li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main main__home">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-conten">
+                        <div class="banner-conten__title">
+                            <h1>Quintessentially British</h1>
+                            <p>Our heritage is rooted in iconic British design where meticulous engineering and crafted
+                                perfection drive a passion to not only produce communication instruments crafted to
+                                captivate and protect. Our aim is to create a protected sanctuary where people can take
+                                control of their busy, over-digitized lives to create balance and equilibrium. </p>
+                        </div>
+                        <div class="banner-conten__img">
+                            <img src="./Assets/Images/phone1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video-intro">
+                <div class="container">
+                    <div class="video-content">
+                        <video src="./Assets/Images/videoplayback.webm" controls></video>
+                        <div class="video-content__title">
+                            <h1>Our story begin...</h1>
+                            <p>With a passion to discover unexplored possibilites & a passion for potential.
+                                To create a product that has an eye on the future rather than
+                                the achievements of the past</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="products__content">
+                        <div class="content__title">
+                            <h2>Collections</h2>
+                        </div>
+                        <div class="content__menu">
+                            <ul>
+                                <li class="content__menu--item active2">
+                                    XOR Titanium
+                                </li>
+                                <li class="content__menu--item">
+                                    XOR Odin
+                                </li>
+                                <li class="content__menu--item">
+                                    XOR Bespoke
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products__cart active3" id="Products--Titanium">
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr1.png" alt="">
+                                    <p>Classic</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr2.png" alt="">
+                                    <p>Ebony</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr3.png" alt="">
+                                    <p>Rose</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <!-- <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr3.png" alt="">
+                                    <p>Rose</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr3.png" alt="">
+                                    <p>Rose</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="products__cart" id="Products--Odin">
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr3.png" alt="">
+                                    <p>Classic</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr2.png" alt="">
+                                    <p>Ebony</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr1.png" alt="">
+                                    <p>Rose</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__cart" id="Products--Bespoke">
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr1.png" alt="">
+                                    <p>Classic</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr2.png" alt="">
+                                    <p>Ebony</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                            <div class="product__cart--item">
+                                <div class="item__img">
+                                    <img src="./Assets/Images/pr3.png" alt="">
+                                    <p>Rose</p>
+                                </div>
+                                <div class="item__video">
+                                    <video class="item__video--type" src="./Assets/Images/videoplayback.webm"></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-us">
+                <div class="container">
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="./Scripts/index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- <script src="./Scripts/slide.js"></script>
+    <script src="./Scripts/navMobile.js"></script> -->
+
+</body>
+
+</html>
