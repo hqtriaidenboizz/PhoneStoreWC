@@ -575,6 +575,7 @@
     .main__product--detail {
         margin: 100px auto 0 auto;
         & .product__briefing {
+            gap: 20px;
             & .arrow_view__more{
                 float: right;
                 display: block;
@@ -586,10 +587,10 @@
                 
             }
             & .product__briefing__img{
-
             }
             & .product__briefing__info{
                 &__content{
+                    padding-top: 10px;
                     & .product--info__mid{
                         & .product--info__btn{
                             // justify-content: center;

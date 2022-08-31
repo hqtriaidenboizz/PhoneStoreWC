@@ -1258,6 +1258,9 @@ body {
   .main__product--detail {
     margin: 100px auto 0 auto;
   }
+  .main__product--detail .product__briefing {
+    gap: 20px;
+  }
   .main__product--detail .product__briefing .arrow_view__more {
     float: right;
     display: block;
@@ -1266,6 +1269,9 @@ body {
     animation-name: arrow__view;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+  }
+  .main__product--detail .product__briefing .product__briefing__info__content {
+    padding-top: 10px;
   }
   .main__product--detail .product__briefing .product__briefing__info__content .product--info__mid .product--info__btn button {
     min-width: 150px;
