@@ -162,3 +162,21 @@ function topFunction() {
 }
 window.addEventListener('scroll', ScrollNav);
 window.addEventListener('scroll', scrollFunction);  
+
+
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+const checkQuantity = () =>{
+  var x = document.getElementById("number").value;
+  if (x > 2){
+    document.getElementById('myModal').style.display="flex"
+  }
+}
+
+const closeModal = () =>{
+  document.getElementById("myModal").style.display="none";
+}

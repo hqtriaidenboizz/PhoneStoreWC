@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Assets/Styles/Css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="wrapper cart">
+        <header class="header theme" id="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="nav-mobile " id="nav-mobile" onclick="OpentNavMobile()">
+                        <span class=""></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <img src="/Assets/Images/logo.png" alt="" class="logo">
+                    <img src="/Assets/Images/logomobile.png" alt="" class="logomb">
+                    <div class="header__menu">
+                        <ul class="menu header-main__menu" id="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Brands</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Dealers</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Customer Service</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul class="menu__right">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div>
+                                        My Cart
+                                    </div>
+                                    <div>
+                                        <p>3</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item__language" id="menu-item__language">
+                                <img class="menu-item__img" src="../Assets/Images/anh.png" alt="">
+                                <button class="menu-item__icon" id="menu-item__icon"><i
+                                        class="ri-arrow-drop-down-line"></i></button>
+                                <div class="item__language" id="item__language">
+                                    <ul>
+                                        <li>EN</li>
+                                        <li>VN</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main main__cart__page">
+            <section class="product__list_cart">
+                <div class="product__list_cart__content">
+                    <h2>
+                        My Cart
+                    </h2>
+                    <div class="cart__products">
+                        <div class="table__products">
+                            <div class="table__products__head">
+                                <div class="head__title">
+                                    Product
+                                </div>
+                                <div class="head__title">
+                                    Unit price
+                                </div>
+                                <div class="head__title">
+                                    Quantity
+                                </div>
+                                <div class="head__title">
+                                    Total
+                                </div>
+                            </div>
+                            <div class="table__products__body ">
+                                <div class="table__products--img">
+                                    <div class="table__img">
+                                        <img src="../Assets/Images/pr1.png" alt="">
+                                    </div>
+                                    <div class="table__products--detail">
+                                        <p>XOR Titanium Collection </p>
+                                        <p> - Ebony</p>
+                                        <p>2 year warranty</p>
+                                    </div>
+                                </div>
+                                <div class="table__products--price">
+                                    đ 126,000,000
+                                </div>
+                                <div class="table__products--quantity">
+                                    <div class="product--info__quantity">
+                                        <form action="">
+                                            <button type='button' onclick="decrementValue()"> - </button>
+                                            <input type="text" name="quantity" value="1" maxlength="2" max="99" size="1"
+                                                id="number" />
+                                            <button type='button' onclick="incrementValue()"> + </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="table__products--total">
+                                    <p>đ 126,000,000</p>
+                                    <i class="ri-delete-bin-7-line"></i>
+                                </div>
+                            </div>
+                            <div class="table__products__body">
+                                <div class="table__products--img">
+                                    <div class="table__img">
+                                        <img src="../Assets/Images/pr3.png" alt="">
+                                    </div>
+                                    <div class="table__products--detail">
+                                        <p>XOR Titanium Collection </p>
+                                        <p> - Rose</p>
+                                        <p>2 year warranty</p>
+                                    </div>
+                                </div>
+                                <div class="table__products--price">
+                                    đ 99,000,000
+                                </div>
+                                <div class="table__products--quantity">
+                                    <div class="product--info__quantity">
+                                        <form action="">
+                                            <button type='button' onclick="decrementValue()"> - </button>
+                                            <input type="text" name="quantity" value="1" maxlength="2" max="99" size="1"
+                                                id="number" />
+                                            <button type='button' onclick="incrementValue()"> + </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="table__products--total">
+                                    <p>đ 99,000,000</p>
+                                    <i class="ri-delete-bin-7-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__total">
+                            <div class="cart__total--content">
+                                <div class="cart__total--content--item">
+                                    <div class="cart__total__quantity cart__total__item">
+                                        <p>Quantity:</p>
+                                        <p>2</p>
+                                    </div>
+                                    <div class="cart__total__sub-total cart__total__item">
+                                        <p>Sub-total:</p>
+                                        <p>đ 225,000,000</p>
+                                    </div>
+                                </div>
+                                <div class="cart__total--content--item">
+                                    <div class="cart__total__Promotion cart__total__item">
+                                        <p>Promotion code:</p>
+                                        <div class="cart__total__btn">
+                                            <input type="text" value="XORPROMO" name="" id="">
+                                            <button>Clear</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart__total--content--item">
+                                    <div class="cart__total__Discount cart__total__item">
+                                        <p>Discount (25%):</p>
+                                        <p> - đ 56,250,000 </p>
+                                    </div>
+                                    <div class="cart__total__Total-payment cart__total__item">
+                                        <p>Total payment:</p>
+                                        <p> đ 168,750,000</p>
+                                    </div>
+                                    <div class="cart__total__button cart__total__item">
+                                        <button class="btn btn--primary">Confirm Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="information">
+                <div class="information__content">
+                    <h3>Do you need support?</h3>
+                    <p class="information__content__detail">Please contact us using the contact information below for assistance with
+                        G-Luxury purchase and service issues.</p>
+                    <div class="information__method">
+                        <div class="information__method__item">
+                            <img src="../Assets/Images/Vectoremail.svg" alt="">
+                            <p>Sale@gluxury.com.vn</p>
+           
+                        </div>
+                        <div class="information__method__item">
+                            <img src="../Assets//Images/Vectorphone.svg" alt="">
+                            <p>(+84) 944 756 756</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__content__Contact">
+                    <div class="footer__content__item">
+                        <div class="contact--title">
+                            <p>Customer Service Hotline</p>
+                        </div>
+                        <div class="contact--workTime">
+                            <p>8:00 - 18:00 on weekdays | 9:00 - 15:00 on Saturday and Sunday</p>
+                        </div>
+                        <div class="contact--phonenumber">
+                            <img src="../Assets/Images/phonevt.svg" alt="">
+                            <p>(+84)944 756 756</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer__content__other">
+                    <div class="footer__content__media">
+                        <i class="ri-linkedin-box-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-facebook-circle-fill"></i>
+                    </div>
+                    <div class="footer__content__page">
+                        <ul class="footer__content__pages">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Brands</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Dealer</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Customer Services</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Contact Us</a>
+                            </li>
+                    </div>
+                    <p>Copyright informations</p>
+
+                </div>
+            </div>
+        </footer>
+        <div class="contact__floating">
+            <div onclick="topFunction()" id="BtnScroll">
+                <i class="ri-arrow-up-s-line"></i>
+            </div>
+            <div>
+                <i class="ri-messenger-fill"></i>
+            </div>
+            <div>
+                <i class="ri-phone-fill"></i>
+            </div>
+        </div>
+        <!-- <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h3>Exceeding the amount</h3>
+                <p>The maximum quantity of <span>XOR Titanium </span> products that can be purchased is
+                    <span>2</span> products/order.</p>
+                    <button>Agree</button>
+            </div>
+          
+          </div> -->
+    </div>
+    <script src="../Scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../Scripts/slide.js"></script>
+</body>
+
+</html>

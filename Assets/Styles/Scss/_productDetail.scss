@@ -219,20 +219,13 @@
                             font-family: var(--ff-1);
                         }
 
-                        & .product--info__btn__item--outline {
-                            background:
-                                linear-gradient(rgb(255, 255, 255) 0 0) padding-box,
-                                linear-gradient(to right, rgba(204, 159, 58, 1), rgba(235, 207, 130, 1)) border-box;
-                            padding: 10px;
-                            border: 2px solid transparent;
-                            border-radius: 30px;
-                            color: #CB9D37;
+                        & .btn--outline {
+                            
                         }
 
                         & .product--info__btn__item--primary {
-                            background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
-                            color: var(--color-1);
-                            // border: 2px solid var(--color-4);
+                           
+                         
                         }
                     }
                 }

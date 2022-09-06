@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../Assets/Styles/Css/app.css">
+    <link rel="shortcut icon" href="../Assets/Images/kig.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail</title>
+    <title>XOR Titanium Collection</title>
 </head>
 
 <body>
@@ -35,19 +36,24 @@
                                 <a href="#" class="menu-link">News</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">Dealer</a>
+                                <a href="#" class="menu-link">Dealers</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-link">Customer Services</a>
+                                <a href="#" class="menu-link">Customer Service</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="menu-link">Contact Us</a>
                             </li>
+                            <li class="menu-item">
+                                <span></span>
+                            </li>
                         </ul>
                         <ul class="menu__right">
                             <li class="menu-item">
-                                <a href="#" class="menu-link">My Cart
-                                    <span>3</span>
+                                <a href="../Pages/cart.html" class="menu-link"><div>
+                                    My Cart
+                                </div>
+                                <div><p>3</p></div>
                                 </a>
                             </li>
                             <li class="menu-item menu-item__language" id="menu-item__language">
@@ -156,8 +162,8 @@
                                 </form>
                             </div>
                             <div class="product--info__btn">
-                                <button class="product--info__btn__item--outline">Add To Cart</button>
-                                <button class="product--info__btn__item--primary ">Order Now</button>
+                                <button onclick="checkQuantity()" class="product--info__btn__item--outline btn--outline">Add To Cart</button>
+                                <button onclick="checkQuantity()" class="product--info__btn__item--primary btn--primary">Order Now</button>
                             </div>
                         </div>
                         <div class="product--info__bottom"> 
@@ -362,6 +368,15 @@
                 <i class="ri-phone-fill"></i>
             </div>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h3>Exceeding the amount</h3>
+                <p>The maximum quantity of <span>XOR Titanium </span> products that can be purchased is
+                    <span>2</span> products/order.</p>
+                    <button onclick="closeModal()" class="btn--primary">Agree</button>
+            </div>
+          
+          </div>
     </div>
     <script src="../Scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
