@@ -18,7 +18,7 @@ body {
     bottom: 20px;
     position: fixed;
 
-    & div:not(:first-child) {
+    & div{
         cursor: pointer;
         transform: 0.4s;
         max-width: 64px;
@@ -45,11 +45,12 @@ body {
         width: 100%;
         font-size: 40px;
         font-weight: 700;
-        background: transparent;
         align-items: center;
         margin: 0 auto;
         text-align: center;
+        color: var(--color-6);
         justify-content: center;
+        
     }
 
     & div:nth-child(2) {
@@ -195,7 +196,7 @@ body {
 }
 
 .btn--primary {
-    transition: all .3s ease;
+    // transition: all .3s ease;
     color: var(--color-1);
     background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
 }
@@ -207,5 +208,5 @@ body {
     border: 2px solid transparent !important;
     border-radius: 30px;
     color: #CB9D37;
-    transition: all .3s ease;
+    // transition: all .3s ease;
 }

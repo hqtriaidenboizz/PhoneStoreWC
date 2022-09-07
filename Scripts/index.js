@@ -149,7 +149,7 @@ var mybutton = document.getElementById("BtnScroll");
 
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "flex";
   } else {
     mybutton.style.display = "none";
   }
@@ -175,6 +175,7 @@ const checkQuantity = () =>{
   if (x > 2){
     document.getElementById('myModal').style.display="flex"
   }
+  
 }
 
 const closeModal = () =>{

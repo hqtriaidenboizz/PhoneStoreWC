@@ -173,7 +173,7 @@ body {
   bottom: 20px;
   position: fixed;
 }
-.contact__floating div:not(:first-child) {
+.contact__floating div {
   cursor: pointer;
   transform: 0.4s;
   max-width: 64px;
@@ -189,7 +189,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.contact__floating div:not(:first-child) i {
+.contact__floating div i {
   font-size: 25px;
 }
 .contact__floating div:nth-child(1) {
@@ -198,10 +198,10 @@ body {
   width: 100%;
   font-size: 40px;
   font-weight: 700;
-  background: transparent;
   align-items: center;
   margin: 0 auto;
   text-align: center;
+  color: var(--color-6);
   justify-content: center;
 }
 .contact__floating div:nth-child(2) {
@@ -332,7 +332,6 @@ body {
 }
 
 .btn--primary {
-  transition: all 0.3s ease;
   color: var(--color-1);
   background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
 }
@@ -342,7 +341,6 @@ body {
   border: 2px solid transparent !important;
   border-radius: 30px;
   color: #CB9D37;
-  transition: all 0.3s ease;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -418,7 +416,7 @@ button {
   padding: 0 var(--pd-c);
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: var(--pd-c);
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -429,6 +427,16 @@ button {
   font-size: var(--fz-1);
   letter-spacing: 0.8px;
   text-align: center;
+}
+.footer__content .footer__content__Contact .contact--workTime p {
+  display: flex;
+}
+.footer__content .footer__content__Contact .contact--workTime p span:nth-child(1) {
+  padding-right: 12px;
+  border-right: 1px solid var(--color-1);
+}
+.footer__content .footer__content__Contact .contact--workTime p span:last-child {
+  padding-left: 12px;
 }
 .footer__content .footer__content__Contact .contact--phonenumber {
   max-width: 191px;
@@ -493,6 +501,19 @@ button {
     padding-top: 15px;
     padding-bottom: 15px;
     flex-direction: column;
+  }
+  .footer .footer__content .footer__content__Contact .contact--workTime p {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.05em;
+    line-height: 19.2px;
+  }
+  .footer .footer__content .footer__content__Contact .contact--workTime p span:nth-child(1) {
+    padding-right: 0;
+    border-right: 0px solid var(--color-1);
+  }
+  .footer .footer__content .footer__content__Contact .contact--workTime p span:last-child {
+    padding-left: 0;
   }
   .footer .footer__content .footer__content__other .footer__content__media {
     margin-top: 30px;
@@ -580,7 +601,7 @@ button {
   white-space: nowrap;
   font-weight: var(--fw-2);
   color: var(--color-1);
-  line-height: 22px;
+  line-height: 23px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -1034,6 +1055,7 @@ button {
 .main__product--detail .product__briefing .product__briefing__info {
   display: flex;
   align-items: flex-start;
+  max-width: 485px;
 }
 .main__product--detail .product__briefing .product__briefing__info__content {
   padding-top: 50px;
@@ -1146,7 +1168,6 @@ button {
   max-width: 235px;
   width: 16.319vw;
   height: 3.333vw;
-  min-width: 180px;
   max-height: 48px;
   min-height: 48px;
   border-radius: 30px;
@@ -1161,6 +1182,14 @@ button {
   flex-direction: column;
   gap: 24px;
   line-height: 24px;
+}
+.main__product--detail .product__briefing .product__briefing__info__content .product--info__bottom .product--info__description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .main__product--detail .product__briefing .product__briefing__info__content .product--info__bottom .product--info__description p span {
   font-weight: var(--fw-3);
@@ -1260,9 +1289,6 @@ button {
 .main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item {
   max-width: 585px;
   min-width: 400px;
-  max-height: 370px;
-  min-height: 300px;
-  height: 25.694vw;
   width: 50%;
   display: block;
   background-color: var(--color-11);
@@ -1272,25 +1298,33 @@ button {
   justify-content: center;
   font-family: var(--ff-1);
 }
-.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item img {
+.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item .our__accessories__products__item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 47px 0;
+}
+.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item .our__accessories__products__item__content img {
   max-height: 120px;
   min-height: 80px;
   height: 8.333vw;
 }
-.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item h5 {
+.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item .our__accessories__products__item__content h5 {
+  max-width: 300px;
+  text-align: center;
   font-weight: var(--fw-2);
   font-size: var(--fz-5);
   margin: 16px 0;
   line-height: 23px;
   letter-spacing: 0.025em;
 }
-.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item p {
+.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item .our__accessories__products__item__content p {
   font-weight: var(--fw-1);
   font-size: var(--fz-5);
   color: #525252;
   line-height: 27px;
 }
-.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item button {
+.main__product--detail .our__accessories .our__accessories__content .our__accessories__products .our__accessories__products__item .our__accessories__products__item__content button {
   margin-top: 55px;
   line-height: 18px;
   outline: none;
@@ -1377,6 +1411,7 @@ button {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
+    min-height: 220px;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -1403,6 +1438,9 @@ button {
     width: 100%;
     height: 100%;
   }
+  .main__product--detail .product__briefing .product__briefing__info .product__briefing__info__content .product--info__mid .product--info__btn button {
+    min-width: 180px;
+  }
   .main__product--detail .other__collections .other__collections__content .our__accessories__products {
     flex-direction: column;
   }
@@ -1427,11 +1465,14 @@ button {
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
+  .main__product--detail .product__briefing .product__briefing__info .product__briefing__info__content .product--info__mid .product--info__btn button {
+    min-width: 130px;
+  }
   .main__product--detail .product__briefing .product__briefing__info__content {
     padding-top: 10px;
   }
   .main__product--detail .product__briefing .product__briefing__info__content .product--info__mid .product--info__btn button {
-    min-width: 150px;
+    min-width: 130px;
     min-height: 38px;
   }
 }
