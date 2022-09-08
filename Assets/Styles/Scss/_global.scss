@@ -177,36 +177,67 @@ body {
     }
 
 }
+.btn__main {
+    cursor: pointer;
+    max-width: 234px;
+    width: 16.319vw;
+    height: 3.333vw;
+    // min-width: 180px;
+    max-height: 48px;
+    min-height: 48px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: var(--fz-2);
+    font-weight: var(--fw-2);
+    font-family: var(--ff-1);
+    background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
+    border-radius: 30px;
+    position: relative;
+    transition: 0.5s;
+    & .btn--background {
+        display: block;
+        position: absolute;
+        background-color: var(--color-1);
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        border-radius: 99px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    & .btn--name {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover{
+        transition: 0.5s !important;
+        transition: background 0.5s ease-out;  
+        background: linear-gradient(86.15deg, #DFC47A 0%, #DFC47A 100%);
+    }
+}
 
 .btn--outline {
-    background:
-    linear-gradient(rgb(255, 255, 255) 0 0) padding-box,
-    linear-gradient(to right, rgba(204, 159, 58, 1), rgba(235, 207, 130, 1)) border-box;
-    border: 2px solid transparent !important;
-    border-radius: 30px;
+    transition: 0.5s;
     color: #CB9D37;
-    
 }
 
-.btn--outline:hover {
-    border: none !important;
-    transition: all .3s ease;
+.btn--outline:hover,.btn--primary{
     color: var(--color-1);
-    background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
+    transition: 0.5s;
+    & .btn--background{
+        opacity: 0;
+        transition: 0.5s;
+    }
 }
-
-.btn--primary {
-    // transition: all .3s ease;
-    color: var(--color-1);
-    background: linear-gradient(86.15deg, #957327 0%, #DFC47A 100%);
-}
-
-.btn--primary:hover {
-    background:
-        linear-gradient(rgb(255, 255, 255) 0 0) padding-box,
-        linear-gradient(to right, rgba(204, 159, 58, 1), rgba(235, 207, 130, 1)) border-box;
-    border: 2px solid transparent !important;
-    border-radius: 30px;
-    color: #CB9D37;
-    // transition: all .3s ease;
+.btn--primary:hover .btn--background{
+   opacity: 1;
+   width: 100%;
+   height: 100%;
+   transition: 0.5s;
+   background-color: #DFC47A;
 }
